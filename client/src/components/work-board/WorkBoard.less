@@ -1,0 +1,35 @@
+@import '../../const/color';
+
+.work-board {
+    position: relative;
+    height  : 90vh;
+
+    &__button {
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__notes {
+        position: relative;
+    }
+
+    &__note {
+        width          : 230px;
+        height         : 300px;
+        border         : 2px solid @text-color;
+        position       : absolute;
+        cursor         : grab;
+        user-select    : none;
+        z-index        : 1;
+        transition     : z-index 0.3s;
+        background-color: #fff;
+        user-select: none;
+
+        &.dragged {
+            z-index: 2;
+            cursor : grabbing;
+        }
+    }
+}

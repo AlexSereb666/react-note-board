@@ -1,0 +1,12 @@
+.container-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.container-menu__name-user {
+  font-size: 28px;
+  pointer-events: none;
+  user-select: none;
+}
+.container-menu__btn {
+  margin-left: 20px;
+}

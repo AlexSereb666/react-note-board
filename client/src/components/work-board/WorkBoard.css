@@ -1,0 +1,28 @@
+.work-board {
+  position: relative;
+  height: 90vh;
+}
+.work-board__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-board__notes {
+  position: relative;
+}
+.work-board__note {
+  width: 230px;
+  height: 300px;
+  border: 2px solid #a49dd1;
+  position: absolute;
+  cursor: grab;
+  z-index: 1;
+  transition: z-index 0.3s;
+  background-color: #fff;
+  user-select: none;
+}
+.work-board__note.dragged {
+  z-index: 2;
+  cursor: grabbing;
+}

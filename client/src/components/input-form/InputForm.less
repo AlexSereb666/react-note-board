@@ -1,0 +1,21 @@
+@import '../../const/color';
+
+.input-form {
+    display: flex;
+}
+  
+.custom-input {
+    padding         : 8px;
+    font-size       : 28px;
+    border          : 3px solid @text-color;
+    color           : @text-color;
+    background-color: @background-color;
+    border-radius   : 5px;
+    outline         : none;
+    transition      : border-color 0.3s;
+}
+  
+.custom-input:focus {
+    border-color: @color-focus;
+    box-shadow  : 0 0 50px rgba(255, 255, 255, 0.5);
+}

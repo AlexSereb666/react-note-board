@@ -1,0 +1,49 @@
+@import '../../const/color';
+
+.container-modal {
+    width        : 405px;
+    height       : auto;
+    padding      : 20px;
+    border       : 2px solid @text-color ;
+    display      : flex;
+    border-radius: 10px;
+
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+
+    position       : absolute;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+
+    &__name {
+        font-size  : 38px;
+        font-weight: bold;
+
+        pointer-events  : none;
+        user-select     : none;
+    }
+
+    &__title {
+        font-size     : 26px;
+        padding-bottom: 10px;
+
+        pointer-events  : none;
+        user-select     : none;
+    }
+
+    &__login {
+        padding-bottom: 10px;
+    }
+
+    &__password {
+        padding-bottom: 15px;
+    }
+
+    &__choice {
+        padding-top: 10px;
+        cursor     : pointer;
+        font-size  : 18px;
+    }
+}

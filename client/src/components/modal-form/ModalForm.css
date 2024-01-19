@@ -1,0 +1,38 @@
+.container-modal {
+  width: 405px;
+  height: auto;
+  padding: 20px;
+  border: 2px solid #a49dd1;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-modal__name {
+  font-size: 38px;
+  font-weight: bold;
+  pointer-events: none;
+  user-select: none;
+}
+.container-modal__title {
+  font-size: 26px;
+  padding-bottom: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+.container-modal__login {
+  padding-bottom: 10px;
+}
+.container-modal__password {
+  padding-bottom: 15px;
+}
+.container-modal__choice {
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}

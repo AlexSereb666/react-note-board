@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #a49dd1;
+}
+body {
+  background-color: #27233d;
+  margin: 20px;
+}
