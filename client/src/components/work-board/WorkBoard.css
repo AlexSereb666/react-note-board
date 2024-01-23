@@ -26,3 +26,41 @@
   z-index: 2;
   cursor: grabbing;
 }
+.note-title-input {
+  font-size: 16px;
+  padding: 2px;
+  margin: 10px auto;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  border-color: #a49dd1;
+}
+.note-description-textarea {
+  font-size: 16px;
+  padding: 2px;
+  margin: 10px auto;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  border-color: #a49dd1;
+  resize: none;
+  height: 200px;
+}
+.note-date {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  margin-right: 10px;
+  text-align: right;
+}
+.delete-icon {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 2px;
+  cursor: pointer;
+  width: 22px;
+  margin-left: auto;
+}
+.delete-icon::hover {
+  color: #f70909;
+}

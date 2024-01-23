@@ -9,10 +9,12 @@ const User = sequelize.define('user', {
 })
 
 const Note = sequelize.define('note', {
-    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    id: {type: DataTypes.BIGINT, primaryKey: true, autoIncrement: true},
     title: {type: DataTypes.STRING},
     description: {type: DataTypes.STRING},
-    date: {type: DataTypes.DATE, defaultValue: fn('NOW')}
+    date: {type: DataTypes.DATE, defaultValue: fn('NOW')},
+    x: {type: DataTypes.FLOAT},
+    y: {type: DataTypes.FLOAT}
 })
 
 User.hasMany(Note)
